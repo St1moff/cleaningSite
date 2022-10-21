@@ -4,13 +4,15 @@
 @import "fonts";
 @import "settings";
 
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/header2";
 
 // тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+
+

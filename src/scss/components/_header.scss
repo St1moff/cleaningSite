@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  margin-top: 13px;
+
+  &__social{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+  }
+  &__location {
+    span{
+      float: right;
+    }
+  }
+  &__mail{
+    span {
+      float: right;
+    }
+  &__logo {
+    width: 103px;
+    height: 103px;
+  }
+  }
+
+}
+.social {
+  &__item {
+    display: inline;
+    width: 32px;
+    height: 32px;
+  }
+}

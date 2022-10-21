@@ -1,1 +1,5 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face("Inter", "../fonts/InterRegular", 400, normal);
+@include font-face("InterBold", "../fonts/InterBold", 700, normal);
+@include font-face("InterMedium", "../fonts/InterMedium", 500, normal);
+@include font-face("InterSemiBold", "../fonts/InterSemiBold", 600, normal);
+@include font-face("InterItalic", "../fonts/InterItalic", 400, italic);

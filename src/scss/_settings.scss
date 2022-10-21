@@ -27,9 +27,6 @@ img {
   object-fit: cover;
 }
 
-a {
-  text-decoration: none;
-}
 
 .site-container {
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
@@ -46,10 +43,17 @@ a {
   cursor: pointer;
 }
 
-.list-reset {
+li  {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+      color: #000
+    }
 }
 
 .input-reset {

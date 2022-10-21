@@ -1,0 +1,29 @@
+
+.header2 {
+  display: flex;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  &__nav {
+    font-family: "InterMedium";
+    padding-left: 0;
+  }
+  &__number {
+    font-family: "InterSemiBold";
+    margin: 0;
+    padding: 0;
+    span {
+      margin-left: 20%;
+
+    }
+  }
+}
+
+.nav {
+  &__item {
+    display: inline;
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
+}
