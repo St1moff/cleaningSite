@@ -1,0 +1,93 @@
+.our-works {
+  margin-top: 117px;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__images {
+    margin-top: -25px;
+  }
+  &__circles {
+    top: -25%;
+    right: -16%;
+    transform: rotate(90deg);
+  }
+}
+
+.slider {
+  &__title {
+    font-family: "InterSemiBold";
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  p {
+    margin: 5px 0;
+    line-height: 24px;
+  }
+}
+
+.arrows {
+  margin: 27px auto;
+  max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.arrow {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 52px;
+    height: 52px;
+    border: 1px solid #4a72ff;
+    border-radius: 50%;
+  }
+  svg {
+    width: 25px;
+    height: 20px;
+  }
+}
+.main-images {
+  margin: 0 auto;
+  margin-top: -25px;
+  position: relative;
+  max-width: 425px;
+  max-height: 425px;
+  z-index: 2;
+}
+.back-image {
+  z-index: -1;
+  position: absolute;
+}
+.transparent-image {
+  position: absolute;
+}
+.main-image {
+  z-index: 2;
+}
+.transparent-image1 {
+  top: -15%;
+  left: 13%;
+}
+.transparent-image2 {
+  top: 35%;
+  right: -20%;
+}
+.transparent-image3 {
+  bottom: -30%;
+  left: -13%;
+}
+.elipse {
+  width: 339px;
+  height: 122px;
+}
+.elipse-1 {
+  bottom: -7%;
+  right: -14%;
+}
+.elipse-2 {
+  top: 11%;
+  left: -13%;
+}

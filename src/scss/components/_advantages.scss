@@ -1,0 +1,36 @@
+.advantages {
+  margin-top: 235px;
+  padding-bottom: 100px;
+  .row {
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    max-width: 100px;
+    max-height: 52px;
+    padding: 0;
+    &--1 {
+      top: -54%;
+      right: -1%;
+      transform: rotate(90deg);
+    }
+    &--2 {
+      bottom: -71%;
+      left: 1%;
+    }
+  }
+  &__item {
+    text-align: center;
+  }
+  &__title {
+    font-family: "InterSemiBold";
+    font-size: 64px;
+    color: var(--main-color);
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-family: "InterMedium";
+    font-size: 22px;
+    line-height: 27px;
+  }
+}

@@ -1,0 +1,102 @@
+<div class="calc-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="first">
+          <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+          </svg>
+          <span>Калькулятор</span>
+        </div>
+        <div class="calc__title main-title">
+          <h1>Калькулятор стоимости</h1>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="calc-2__body">
+          <div class="calc-2__image">
+            <h2 class="calc-2__title">
+              Скидка на экономию времени нашего мастера
+            </h2>
+            <div class="calc-2__discout">+15%</div>
+            <picture>
+              <source srcset="../img/calc2-sofa.avif" type="image/avif" />
+              <source srcset="../img/calc2-sofa.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="../img/calc2-sofa.png"
+                class="calc-2__img"
+                width=""
+                height=""
+                alt=""
+              />
+            </picture>
+          </div>
+          <div class="calc-2__calculator">
+            <form action="#" class="calc-2__form form">
+              <label class="form__label">
+                <span class="form__text">Количество комнат?</span>
+                <div class="select select3 calc-2__select">
+                  <div class="select__top select3__top">
+                    <input
+                      id="select3__input"
+                      class="select__input"
+                      readonly
+                      value="1 Комната"
+                    />
+                    <svg class="select__arrow">
+                      <use xlink:href="img/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="select__options select3__options">
+                    <div class="select__option select3__option">
+                      <label>2 Комнаты</label>
+                    </div>
+                    <div class="select__option select3__option">
+                      <label>3 Комнаты</label>
+                    </div>
+                    <div class="select__option select3__option">
+                      <label>4 Комнаты</label>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="form__label">
+                <span class="form__text">Площадь (м<sup>2</sup>)</span>
+                <input
+                  type="text"
+                  name="М(кв)"
+                  class="input-reset form__input form__sqare"
+                  placeholder="10"
+                />
+              </label>
+              <label class="form__label">
+                <input
+                  type="text"
+                  name="Имя"
+                  class="input-reset form__input form__name"
+                  placeholder="Ваше имя"
+                />
+                <svg class="form__name-icon">
+                  <use xlink:href="img/sprite.svg#name"></use>
+                </svg>
+              </label>
+              <label class="form__label">
+                <input
+                  type="text"
+                  name="Телефон"
+                  class="input-reset form__input form__phone"
+                  placeholder="Телефон"
+                />
+                <svg class="form__name-icon">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+              </label>
+              <button class="btn-reset form__btn main-btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

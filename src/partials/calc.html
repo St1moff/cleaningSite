@@ -1,0 +1,406 @@
+<section class="calc">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="first">
+          <svg class="line">
+            <use xlink:href="img/sprite.svg#line"></use>
+          </svg>
+          <span>Калькулятор</span>
+        </div>
+        <div class="calc__title main-title">
+          <h1>Калькулятор стоимости</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row calculator">
+      <div class="col-4">
+        <h2 class="calculator__title">Тип помещания</h2>
+        <div class="select calculator__select">
+          <div class="select__top">
+            <input
+              id="select__input"
+              class="select__input"
+              readonly
+              value="Уборка коттеджа"
+            />
+            <svg class="select__arrow">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+          <div class="select__options">
+            <div class="select__option">
+              <label>Уборка коттеджа</label>
+            </div>
+            <div class="select__option">
+              <label>Уборка коттеджа</label>
+            </div>
+            <div class="select__option">
+              <label>Уборка коттеджа</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <h2 class="calculator__title">Тип уборки</h2>
+
+        <div class="select select2 calculator__select">
+          <div class="select__top select2__top">
+            <input
+              id="select2__input"
+              class="select__input"
+              readonly
+              value="Генеральная уборка"
+            />
+            <svg class="select__arrow">
+              <use xlink:href="img/sprite.svg#arrow-down"></use>
+            </svg>
+          </div>
+          <div class="select__options select2__options">
+            <div class="select__option select2__option">
+              <label>Генеральная уборка</label>
+            </div>
+            <div class="select__option select2__option">
+              <label>Генеральная уборка</label>
+            </div>
+            <div class="select__option select2__option">
+              <label>Генеральная уборка</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <h2 class="calculator__title">Площадь помещения</h2>
+        <form action="" class="area calculator__area">
+          <input class="area__input" value="10" />
+          <span class="area__sqare">( м<sup>2</sup> )</span>
+        </form>
+      </div>
+      <div class="col-8">
+        <div class="calculator__items">
+          <div class="calculator__item calculator-first">
+            <span class="calculator__type"> Количество санузлов </span>
+            <span class="calculator__price">
+              Один санузел входит в базовую стоимость
+            </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus-black"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus-black"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus-black"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info-black"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item calculator-nonprice">
+            <span class="calculator__type">
+              Точную стоимость уточняйте у менеджера
+            </span>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="calculator__item">
+            <span class="calculator__type"> Мойка окон </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
+            <div class="calculator__toggle">
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+              <input type="number" class="calculator__count" value="1" />
+              <button class="calculator__btn">
+                <svg class="calculator__minus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+                <svg class="calculator__plus calculator__icons">
+                  <use xlink:href="img/sprite.svg#minus"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="calculator__info">
+              <a href="#">
+                <svg class="calculator__info calculator__icons">
+                  <use xlink:href="img/sprite.svg#info"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <h3 class="calculator__title3">
+          Закажите уборку помещения и узнайте о вашей персональной скидкe
+        </h3>
+      </div>
+      <div class="col-4">
+        <div class="calculator__total total">
+          <h2 class="total__title">Стоимость услуг</h2>
+          <div class="total__body">
+            <ul class="total__items">
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1 мест</span
+                ><span class="total__count">1 шт</span
+                ><span class="total__price">1000</span>
+              </li>
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1.5 мест</span
+                ><span class="total__count">1 шт</span
+                ><span class="total__price">1400</span>
+              </li>
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1.5 мест</span
+                ><span class="total__count">1 шт</span
+                ><span class="total__price">1400</span>
+              </li>
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1.5 мест</span
+                ><span class="total__count">1 шт</span
+                ><span class="total__price">1400</span>
+              </li>
+            </ul>
+            <div class="total__total-price">
+              <span>Итого</span>
+              <span>5200</span>
+            </div>
+            <form action="#" class="total__form form">
+              <h3 class="form__title">
+                Для заказа услуги, заполните форму ниже
+              </h3>
+              <label class="form__label">
+                <input
+                  type="text"
+                  name="Имя"
+                  class="input-reset form__input form__input"
+                  placeholder="Имя"
+                />
+                <input
+                  type="phone"
+                  class="input-reset form__phone form__input"
+                  placeholder="Телефон"
+                />
+                <input
+                  type="email"
+                  class="input-reset form__email form__input"
+                  placeholder="Email"
+                />
+                <textarea
+                  class="input-reset form__textarea form__input"
+                  placeholder="Комментарий к заказу"
+                ></textarea>
+              </label>
+              <button class="form__btn main-btn">Заказать уборку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,15 +4,20 @@
 @import "fonts";
 @import "settings";
 
-* {
-  padding: 0px;
-  margin: 0px;
-  border: none;
-}
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/header2";
+@import "./components/order";
+@import "./components/services";
+@import "./components/calc";
+@import "./components/our-works";
+@import "./components/how-work";
+@import "./components/calc2";
+@import "./components/why-we";
+@import "./components/advantages";
+@import "./components/our-workers";
+@import "./components/entities";
+@import "./components/reviews";
+@import "./components/contact-us";
 
 // тестовые стили, удалите их
-
-

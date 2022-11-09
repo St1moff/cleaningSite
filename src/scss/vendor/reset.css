@@ -9,17 +9,26 @@
   padding: 0;
   margin: 0;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 dl,
 ol,
 ul {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   color: #000;
-  background: #FFF;
+  background: #fff;
 }
 
 body,
@@ -61,7 +70,6 @@ img {
   border: 0;
 }
 
-
 address,
 caption,
 cite,
@@ -97,7 +105,7 @@ h6 {
 
 q:before,
 q:after {
-  content: '';
+  content: "";
 }
 
 abbr,

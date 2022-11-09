@@ -1,0 +1,52 @@
+.why-we {
+  margin-top: 150px;
+  &__title {
+    font-size: 32px;
+    margin-bottom: 26px;
+  }
+  &__text {
+    line-height: 24px;
+  }
+  &__images {
+    margin-top: 80px;
+  }
+}
+
+.benifits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 33px;
+  &__item {
+    display: flex;
+    align-items: center;
+    max-width: 293px;
+    padding: 34px 0;
+    font-family: "InterSemiBold";
+    font-size: 16px;
+    line-height: 22px;
+
+    &--clean {
+      border-bottom: 1px solid #bababa;
+      border-right: 1px solid #bababa;
+      padding-right: 20px;
+    }
+    &--hundred {
+      border-bottom: 1px solid #bababa;
+      padding-left: 20px;
+    }
+    &--work {
+      border-right: 1px solid #bababa;
+      padding-right: 20px;
+    }
+    &--workers {
+      padding-left: 20px;
+    }
+  }
+  &__title {
+    max-width: 185px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,60 @@
+.reviews {
+  margin-top: 260px;
+  &__title {
+    font-size: 44.5px;
+    margin-bottom: 30px;
+  }
+  &__logo {
+    width: 228px;
+    height: 229px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 33px;
+  }
+  &__item {
+    width: 100%;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 31px;
+    span {
+      margin-left: 14px;
+    }
+  }
+  &__text {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &__rate {
+    margin-top: 20px;
+  }
+  .col-8 {
+    position: relative;
+    width: 738px;
+  }
+  &__button-next {
+    position: absolute;
+    top: 52%;
+    right: -6%;
+  }
+  &__button-prev {
+    position: absolute;
+    top: 52%;
+    left: -6%;
+  }
+  &__pagination {
+    bottom: 0% !important;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+  }
+}

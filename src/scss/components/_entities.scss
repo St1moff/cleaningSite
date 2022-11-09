@@ -1,0 +1,40 @@
+.entities {
+  margin-top: 170px;
+  &__title {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+  &__text {
+    line-height: 24px;
+  }
+  &__list {
+    margin-top: 20px;
+  }
+  &__item {
+    position: relative;
+    padding-left: 22px;
+    line-height: 24px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: var(--main-color);
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  &__images {
+    margin-top: 57px;
+  }
+}

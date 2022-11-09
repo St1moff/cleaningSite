@@ -1,0 +1,113 @@
+.calc-2 {
+  margin-top: 150px;
+  &__body {
+    display: flex;
+    border-radius: 10px;
+    margin: 0 35px;
+    box-shadow: 0px 4px 37px rgba(33, 27, 94, 0.25);
+  }
+  &__image {
+    max-width: 476px;
+    max-height: 523px;
+    padding-bottom: 30px;
+    background-color: var(--main-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    padding-top: 11.5%;
+    padding-left: 7%;
+  }
+  &__discout {
+    font-family: "InterBold";
+    font-size: 64px;
+    line-height: 85px;
+    color: #ffffff;
+    padding-top: 5%;
+    padding-left: 45%;
+  }
+  &__img {
+    width: 500px;
+    height: 225px;
+  }
+  &__calculator {
+    width: 69%;
+    padding-top: 60px;
+    padding-left: 50px;
+  }
+  &__select {
+    width: 295px;
+    height: 45px;
+  }
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+
+    gap: 15px;
+    &__input {
+      margin: 0;
+      margin-top: 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      height: 45px;
+    }
+    &__label:not(:nth-child(1)) {
+      width: 94%;
+      position: relative;
+    }
+    &__label:nth-child(2) {
+      width: 50%;
+    }
+    &__sqare {
+      max-width: 295px;
+    }
+    &__name {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      padding-left: 55px;
+    }
+    &__phone {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      padding-left: 55px;
+    }
+    &__name-icon {
+      width: 22px;
+      height: 24px;
+      position: absolute;
+      top: 44%;
+      left: 27px;
+    }
+    &__btn {
+      margin: 0 auto;
+      margin-top: 27px;
+      max-width: 130px;
+      transform: translate(-39%, 0);
+    }
+    .select {
+      max-width: 295px;
+      font-size: 16px;
+      margin-top: 20px;
+      &__top {
+        border-radius: 25px;
+        height: 45px;
+      }
+      &__options {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.select3.select3--active .select3__options {
+  height: 180px;
+}

@@ -1,0 +1,120 @@
+.order {
+  margin-top: 87px;
+  position: relative;
+  padding-bottom: 100px;
+
+  &__title {
+
+    &--elipse {
+      z-index: 2;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: inline;
+        background-image: url('../../img/Ellipse-services.png');
+        position: absolute;
+        top: 0;
+        left: -5px;
+        z-index: -1;
+        width: 189px;
+        height: 68px;
+      }
+    }
+  }
+
+  &__text {
+    width: 505px;
+    padding-top: 33px;
+    line-height: 24px;
+  }
+
+  &__btn {
+    margin-top: 31px;
+  }
+
+  &__image {
+    position: relative;
+    margin-top: -60px;
+    margin-left: 81px;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 168.91px;
+      height: 169px;
+      bottom: -65px;
+      left: -95px;
+      background-image: url("../../img/order-logo.png");
+
+    }
+
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: -30px;
+      right: 0;
+      width: 278px;
+      height: 265px;
+      border-radius: 10px;
+      background-color: var(--main-color)
+    }
+  }
+
+  &__pseudo {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 52px;
+      height: 100px;
+      background-repeat: no-repeat;
+      transform: translate(-6px, -90px);
+      background-image: url('../../img/circles1.png');
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+      height: 52px;
+      background-repeat: no-repeat;
+      transform: translate(-11px, 65px);
+      background-image: url('../../img/circles2.png');
+    }
+  }
+}
+
+.main-btn {
+  width: 179px;
+  height: 44px;
+  border-radius: 10px;
+  color: #fff;
+  background: var(--main-color);
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  span {
+    padding-left: 9px;
+  }
+}
+
+.main-title {
+  padding-top: 24px;
+  font-family: "InterSemiBold";
+  font-size: 48px;
+}
+
+.line {
+  width: 32px;
+  height: 2px;
+}
