@@ -1,28 +1,38 @@
 .header {
   display: flex;
   margin-top: 13px;
-
-  &__social{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cacaca;
+  .row > * {
+    width: inherit;
+  }
+  &__social {
     padding: 0;
     display: flex;
     justify-content: space-between;
     width: 160px;
   }
+  .social-col {
+    @include mobile {
+      margin-left: auto;
+    }
+  }
   &__location {
-    span{
-      float: right;
+    margin-left: auto;
+    text-align: right;
+    @include tablet {
+      display: none;
     }
   }
-  &__mail{
-    span {
-      float: right;
+  &__mail {
+    text-align: right;
+    @include tablet {
+      padding-left: auto;
     }
-  &__logo {
-    width: 103px;
-    height: 103px;
+    @include mobile {
+      display: none;
+    }
   }
-  }
-
 }
 .social {
   &__item {

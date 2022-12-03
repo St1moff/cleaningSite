@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 132px;
+  border-top: 1px solid #cacaca;
+  padding-bottom: 40px;
+  &__text {
+    text-align: center;
+  }
+  .nav {
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1000px;
+      padding: 20px;
+      @include big-mobile {
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+    &__item {
+      line-height: 19px;
+      color: #202020;
+      @include big-mobile {
+        width: 33.33%;
+      }
+    }
+  }
+}

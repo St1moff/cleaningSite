@@ -13,6 +13,9 @@
     img {
       width: 100%;
     }
+    @include wide-mobile {
+      display: none;
+    }
   }
   &__title {
     margin-bottom: 25px;
@@ -24,8 +27,6 @@
   }
   &__item {
     text-align: center;
-  }
-  &__image {
   }
   &__text {
     top: -25px;

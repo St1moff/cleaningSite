@@ -1,33 +1,6 @@
-.our-works {
-  margin-top: 117px;
-  &__title {
-    margin-bottom: 40px;
-  }
-  &__images {
-    margin-top: -25px;
-  }
-  &__circles {
-    top: -25%;
-    right: -16%;
-    transform: rotate(90deg);
-  }
-}
-
-.slider {
-  &__title {
-    font-family: "InterSemiBold";
-    font-size: 24px;
-    margin-bottom: 25px;
-  }
-  p {
-    margin: 5px 0;
-    line-height: 24px;
-  }
-}
-
 .arrows {
-  margin: 27px auto;
-  max-width: 100px;
+  margin: 27px 20%;
+  max-width: 120px;
   display: flex;
   justify-content: space-between;
 }
@@ -49,45 +22,186 @@
     height: 20px;
   }
 }
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
 .main-images {
   margin: 0 auto;
-  margin-top: -25px;
+  margin-top: -120px;
   position: relative;
-  max-width: 425px;
+  max-width: 525px;
   max-height: 425px;
   z-index: 2;
+  @include tablet {
+    margin-top: 100px;
+  }
+  .back-image {
+    z-index: -1;
+    position: absolute;
+  }
+  .transparent-image {
+    position: absolute;
+  }
+  .image {
+    z-index: 2;
+  }
+  .transparent-image1 {
+    top: -15%;
+    left: 13%;
+    @include xl {
+      width: 148px;
+      height: 95px;
+    }
+    @include mobile {
+      width: 100px;
+      height: 64px;
+    }
+  }
+  .transparent-image2 {
+    top: 35%;
+    right: -20%;
+    @include xl {
+      width: 105px;
+      height: 128px;
+    }
+    @include mobile {
+      width: 63px;
+      height: 77px;
+    }
+  }
+  .transparent-image3 {
+    bottom: -30%;
+    left: -13%;
+    @include xl {
+      width: 132px;
+      height: 173px;
+    }
+    @include mobile {
+      width: 64px;
+      height: 84px;
+    }
+  }
+  .elipse {
+    width: 339px;
+    height: 122px;
+  }
+  .elipse-1 {
+    bottom: -7%;
+    right: -14%;
+    @include xl {
+      height: 104px;
+    }
+    @include mobile {
+      width: 111px;
+      height: 40px;
+    }
+  }
+  .elipse-2 {
+    top: 11%;
+    left: -13%;
+    @include xl {
+      width: 273px;
+      height: 98px;
+    }
+    @include mobile {
+      width: 111px;
+      height: 40px;
+    }
+  }
+  @include xl {
+    width: 289px;
+    height: 289px;
+  }
+  @include mobile {
+    width: 188px;
+    height: 188px;
+  }
+  .circles1 {
+    top: -25%;
+    right: -16%;
+    transform: rotate(90deg);
+    @include xl {
+      top: -60%;
+    }
+  }
 }
-.back-image {
-  z-index: -1;
-  position: absolute;
+
+.our-works {
+  margin-top: 117px;
+  position: relative;
+  &__title {
+    margin-bottom: 40px;
+    @include xl {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  &__arrows2 {
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 60px;
+  }
+  &__images {
+    margin-top: -25px;
+    @include tablet {
+      margin-top: 130px;
+    }
+  }
+  &__circle {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__circle--1 {
+    position: absolute;
+    display: none;
+    top: 28%;
+    right: 4%;
+    transform: rotate(90deg);
+    @include tablet {
+      display: block;
+    }
+    @include mobile {
+      top: 8%;
+      right: 10%;
+    }
+  }
+  &__circle--2 {
+    position: absolute;
+    display: none;
+    top: 25%;
+    left: -1%;
+    transform: rotate(90deg);
+    display: none;
+    @include tablet {
+      display: block;
+    }
+    @include mobile {
+      transform: rotate(0deg);
+      top: inherit;
+      bottom: -25%;
+      left: 10%;
+      z-index: 3;
+    }
+  }
 }
-.transparent-image {
-  position: absolute;
+.tablet-circles {
+  position: relative;
 }
-.main-image {
-  z-index: 2;
-}
-.transparent-image1 {
-  top: -15%;
-  left: 13%;
-}
-.transparent-image2 {
-  top: 35%;
-  right: -20%;
-}
-.transparent-image3 {
-  bottom: -30%;
-  left: -13%;
-}
-.elipse {
-  width: 339px;
-  height: 122px;
-}
-.elipse-1 {
-  bottom: -7%;
-  right: -14%;
-}
-.elipse-2 {
-  top: 11%;
-  left: -13%;
+.slider {
+  &__title {
+    font-family: "InterSemiBold";
+    font-size: 24px;
+    margin-bottom: 25px;
+    @include xl {
+      font-size: 20px;
+    }
+  }
+  p {
+    margin: 5px 0;
+    line-height: 24px;
+  }
 }

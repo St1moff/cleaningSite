@@ -5,14 +5,22 @@
     border-radius: 10px;
     margin: 0 35px;
     box-shadow: 0px 4px 37px rgba(33, 27, 94, 0.25);
+    @include wide-mobile {
+      margin: 0;
+    }
   }
   &__image {
     max-width: 476px;
-    max-height: 523px;
     padding-bottom: 30px;
     background-color: var(--main-color);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    @include xl {
+      max-width: 334px;
+    }
+    @include tablet {
+      display: none;
+    }
   }
   &__title {
     font-size: 24px;
@@ -37,17 +45,16 @@
     width: 69%;
     padding-top: 60px;
     padding-left: 50px;
-  }
-  &__select {
-    width: 295px;
-    height: 45px;
+    @include tablet {
+      width: 100%;
+      padding: 30px;
+    }
   }
   .form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-
     gap: 15px;
     &__input {
       margin: 0;
@@ -60,11 +67,24 @@
       width: 94%;
       position: relative;
     }
+    &__label:nth-child(1) {
+      width: 46%;
+      @include wide-mobile {
+        width: 94%;
+      }
+    }
     &__label:nth-child(2) {
-      width: 50%;
+      width: 46%;
+      @include wide-mobile {
+        width: 94%;
+      }
     }
     &__sqare {
       max-width: 295px;
+      width: 100%;
+      @include tablet {
+        max-width: none;
+      }
     }
     &__name {
       display: flex;
@@ -92,10 +112,15 @@
       margin-top: 27px;
       max-width: 130px;
       transform: translate(-39%, 0);
+      @include tablet {
+        transform: translate(0, 0);
+      }
     }
     .select {
       max-width: 295px;
+      width: 100%;
       font-size: 16px;
+      margin: 0;
       margin-top: 20px;
       &__top {
         border-radius: 25px;
@@ -103,6 +128,9 @@
       }
       &__options {
         margin-top: 15px;
+      }
+      @include wide-mobile {
+        max-width: 100%;
       }
     }
   }

@@ -23,15 +23,27 @@ const whyWeSwiper = new Swiper(".why-we__slider", {
   },
 });
 const ourWorkersSwiper = new Swiper(".our-workers__slider", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
   slidesPerView: 4,
-
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     type: "bullets",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    700: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
   },
 });
 const reviewsSwiper = new Swiper(".reviews__slider", {

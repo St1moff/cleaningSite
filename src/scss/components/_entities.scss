@@ -3,6 +3,9 @@
   &__title {
     font-size: 32px;
     margin-bottom: 38px;
+    @include xl {
+      font-size: 24px;
+    }
   }
   &__text {
     line-height: 24px;
@@ -36,5 +39,8 @@
   }
   &__images {
     margin-top: 57px;
+    @include tablet {
+      margin-top: 115px;
+    }
   }
 }

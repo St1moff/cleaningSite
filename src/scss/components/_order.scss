@@ -1,93 +1,159 @@
 .order {
-  margin-top: 87px;
+  margin-top: 74px;
   position: relative;
   padding-bottom: 100px;
-
+  .row {
+    flex-wrap: nowrap;
+    @include big-mobile {
+      flex-wrap: wrap;
+    }
+  }
   &__title {
-
     &--elipse {
       z-index: 2;
       position: relative;
-
       &::before {
         content: "";
         display: inline;
-        background-image: url('../../img/Ellipse-services.png');
+        background-image: url("../../img/Ellipse-services.png");
         position: absolute;
         top: 0;
         left: -5px;
         z-index: -1;
+        background-size: 100%;
+        background-repeat: no-repeat;
         width: 189px;
         height: 68px;
+        @include big-desktop {
+          width: 152px;
+          height: 58px;
+        }
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+    @include big-desktop {
+      max-width: 454px;
+      h1 {
+        font-size: 38px;
+      }
+    }
+    @include tablet {
+      h1 {
+        font-size: 28px;
       }
     }
   }
 
   &__text {
-    width: 505px;
+    max-width: 505px;
     padding-top: 33px;
     line-height: 24px;
+    z-index: 10;
+    @include big-mobile {
+      max-width: none;
+    }
   }
 
   &__btn {
     margin-top: 31px;
   }
-
-  &__image {
+  &__images {
     position: relative;
+    margin: 0 auto;
     margin-top: -60px;
-    margin-left: 81px;
-    z-index: 2;
-
+    width: 475px;
+    height: 432px;
+    z-index: 1;
     &::before {
-      content: "";
-      position: absolute;
-      width: 168.91px;
-      height: 169px;
-      bottom: -65px;
-      left: -95px;
-      background-image: url("../../img/order-logo.png");
-
-    }
-
-    &::after {
       content: "";
       z-index: -1;
       position: absolute;
-      top: -30px;
-      right: 0;
+      top: -7%;
+      right: -7%;
       width: 278px;
       height: 265px;
       border-radius: 10px;
-      background-color: var(--main-color)
+      background-color: var(--main-color);
+      @include big-desktop {
+        width: 193px;
+        height: 182px;
+      }
+      @include tablet {
+        width: 151px;
+        height: 144px;
+      }
+    }
+    @include big-desktop {
+      width: 333px;
+      height: 298px;
+    }
+    @include tablet {
+      width: 258px;
+      height: 234px;
+    }
+    @include tablet {
+      transform: translateX(30px);
+    }
+    @include big-mobile {
+      margin-top: 100px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  &__logo {
+    position: absolute;
+    width: 168.91px;
+    height: 169px;
+    background-repeat: no-repeat;
+    bottom: -14%;
+    left: -18%;
+    z-index: 2;
+    @include big-desktop {
+      bottom: -28%;
+      left: -25%;
+    }
+    @include tablet {
+      width: 103px;
+      height: 103px;
+      bottom: -24%;
+      left: -20%;
     }
   }
 
-  &__pseudo {
-    position: relative;
+  &__circles {
+    position: absolute;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
+    &--1 {
+      top: -7%;
+      left: -19%;
       width: 52px;
       height: 100px;
-      background-repeat: no-repeat;
-      transform: translate(-6px, -90px);
-      background-image: url('../../img/circles1.png');
-    }
+      @include big-desktop {
+        left: -23%;
+      }
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
+      @include tablet {
+        width: 32px;
+        height: 61px;
+      }
+    }
+    &--2 {
+      bottom: -17%;
+      right: -7%;
       width: 100px;
       height: 52px;
-      background-repeat: no-repeat;
-      transform: translate(-11px, 65px);
-      background-image: url('../../img/circles2.png');
+      @include big-desktop {
+        bottom: -24%;
+      }
+      @include tablet {
+        width: 61px;
+        height: 32px;
+      }
     }
   }
 }
@@ -112,6 +178,9 @@
   padding-top: 24px;
   font-family: "InterSemiBold";
   font-size: 48px;
+  @include wide-mobile {
+    font-size: 20px !important;
+  }
 }
 
 .line {

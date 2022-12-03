@@ -4,12 +4,39 @@
   &__title {
     margin-bottom: 50px;
   }
+  &__form {
+    box-shadow: 2px 4px 11px 4px rgba(136, 136, 156, 0.25);
+    border-radius: 10px;
+    padding: 24px 15px;
+  }
+  &__xl {
+    display: none;
+  }
+}
+@include big-desktop {
+  .calc__xxl {
+    display: none;
+  }
+  .calc__xl {
+    display: flex;
+    margin-top: 50px;
+  }
+}
+@include big-mobile {
+  .calc__xxl {
+    display: flex;
+    margin-top: 50px;
+  }
+  .calc__xl {
+    display: none;
+  }
 }
 
 .calculator {
   box-shadow: 2px 4px 11px 4px rgba(136, 136, 156, 0.25);
   border-radius: 10px;
   max-width: 1250px;
+  margin: 0 5px;
   text-align: center;
   padding-bottom: 40px;
   padding-top: 55px;
@@ -18,6 +45,20 @@
     font-size: 24px;
     font-family: "InterSemiBold";
     margin-bottom: 23px;
+    @include tablet {
+      font-size: 18px;
+    }
+    @include big-mobile {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+  &__top {
+    @include big-mobile {
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
   }
   &__items {
     margin-top: 52px;
@@ -29,7 +70,6 @@
     margin: 0 auto;
     text-align: left;
     height: 60px;
-    max-width: 750px;
     background: #e5ebff;
     border-radius: 10px;
     &:not(:last-child) {
@@ -40,10 +80,16 @@
   &__type {
     margin-left: 16px;
     width: 25%;
+    @include mobile {
+      width: 50%;
+    }
   }
   &__price {
     max-width: 174px;
     width: 25%;
+    @include mobile {
+      display: none;
+    }
   }
   &__icons {
     width: 10px;
@@ -53,6 +99,12 @@
   &__toggle {
     padding-left: 10%;
     width: 25%;
+    @include wide-mobile {
+      padding-left: 0;
+    }
+    @include mobile {
+      width: 30%;
+    }
   }
   &__btn {
     background-color: inherit;
@@ -102,6 +154,9 @@
       z-index: -1;
       border-radius: 50%;
     }
+    @include wide-mobile {
+      display: none;
+    }
   }
   &__title3 {
     font-size: 20px;
@@ -109,6 +164,9 @@
     width: 500px;
     font-family: "InterSemiBold";
     margin-top: 48px;
+    @include big-desktop {
+      display: none;
+    }
   }
   .calculator-first {
     background-color: var(--main-color);
@@ -146,14 +204,21 @@
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
     }
+    @include wide-mobile {
+      display: none;
+    }
+  }
+
+  @include big-mobile {
+    box-shadow: none;
   }
 }
 .select {
   position: relative;
-  margin: 0 auto;
-  width: 300px;
+  max-width: 300px;
   font-size: 17px;
   font-family: "Inter";
+  margin: 0 auto;
   &__top {
     position: relative;
     height: 53px;
@@ -170,6 +235,9 @@
     outline: none;
     border: none;
     cursor: pointer;
+    @include tablet {
+      padding: 0 10px;
+    }
   }
   &__options {
     z-index: 3;
@@ -202,6 +270,18 @@
   &__arrow {
     width: 22px;
     height: 12px;
+    @include tablet {
+      padding-right: 5px;
+    }
+  }
+  @include big-desktop {
+    max-width: 280px;
+  }
+  @include big-desktop {
+    max-width: 280px;
+  }
+  @include big-mobile {
+    max-width: 100%;
   }
 }
 .select.select--active .select__options {
@@ -217,7 +297,7 @@
 
 .area {
   margin: 0 auto;
-  width: 300px;
+  max-width: 300px;
   height: 53px;
   border: 1px solid #c8c8c8;
   border-radius: 10px;
@@ -232,7 +312,14 @@
   &__sqare {
     font-family: "InterSemiBold";
     font-size: 18px;
-    margin-right: 50px;
+    margin-right: 15%;
+  }
+  @include big-desktop {
+    max-width: 280px;
+  }
+  @include big-mobile {
+    max-width: 100%;
+    width: 100%;
   }
 }
 sup {
@@ -266,6 +353,12 @@ sup {
     justify-content: space-between;
     text-align: left;
     padding: 6px 0;
+    @include wide-mobile {
+      font-size: 14px;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
   }
   &__total-price {
     display: flex;
@@ -275,12 +368,19 @@ sup {
     font-family: "InterSemiBold";
     color: var(--main-color);
   }
+  @include big-desktop {
+    margin-top: 0;
+  }
 }
 .form {
   &__title {
     margin: 0 auto;
     max-width: 250px;
     margin-bottom: 32px;
+    @include big-desktop {
+      text-align: center;
+      max-width: 100%;
+    }
   }
   &__input {
     width: 100%;

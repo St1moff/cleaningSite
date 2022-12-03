@@ -1,7 +1,7 @@
 <section class="order">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-xxl-6 col-lg-6 col-md-6 col-xs-12">
         <div class="first">
           <svg class="line">
             <use xlink:href="img/sprite.svg#line"></use>
@@ -21,9 +21,31 @@
         <button class="order__btn main-btn">Заказать уборку</button>
       </div>
 
-      <div class="col-6 order__pseudo">
-        <div class="order__image">
-          <img src="../img/order-image.jpg" alt="Наша работа" />
+      <div class="col-xxl-6 col-md-6 col-xs-12">
+        <div class="order__images">
+          <picture>
+            <source srcset="../img/order-image.avif" type="image/avif" />
+            <source srcset="../img/order-image.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              src="../img/order-image.jpg"
+              class="order__image img-fluid"
+              width=""
+              height=""
+              alt="наша работа"
+            />
+          </picture>
+          <img src="../img/order-logo.png" alt="" class="order__logo" />
+          <img
+            src="../img/circles1.png"
+            alt=""
+            class="order__circles--1 order__circles"
+          />
+          <img
+            src="../img/circles2.png"
+            alt=""
+            class="order__circles--2 order__circles"
+          />
         </div>
       </div>
     </div>

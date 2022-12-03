@@ -14,9 +14,9 @@
       </div>
     </div>
     <div class="row calculator">
-      <div class="col-4">
+      <div class="col-md-4 col-12 calculator__top">
         <h2 class="calculator__title">Тип помещания</h2>
-        <div class="select calculator__select">
+        <div class="select calculator__select top__item">
           <div class="select__top">
             <input
               id="select__input"
@@ -41,16 +41,16 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-12 calculator__top">
         <h2 class="calculator__title">Тип уборки</h2>
 
-        <div class="select select2 calculator__select">
+        <div class="select select2 calculator__select top__item">
           <div class="select__top select2__top">
             <input
               id="select2__input"
               class="select__input"
               readonly
-              value="Генеральная уборка"
+              value="Генеральная"
             />
             <svg class="select__arrow">
               <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -69,20 +69,18 @@
           </div>
         </div>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-12 calculator__top">
         <h2 class="calculator__title">Площадь помещения</h2>
-        <form action="" class="area calculator__area">
+        <form action="" class="area calculator__area top__item">
           <input class="area__input" value="10" />
           <span class="area__sqare">( м<sup>2</sup> )</span>
         </form>
       </div>
-      <div class="col-8">
+      <div class="col-xxl-8 col-md-12">
         <div class="calculator__items">
           <div class="calculator__item calculator-first">
             <span class="calculator__type"> Количество санузлов </span>
-            <span class="calculator__price">
-              Один санузел входит в базовую стоимость
-            </span>
+            <span class="calculator__price"> от 250 ₽/шт </span>
             <div class="calculator__toggle">
               <button class="calculator__btn">
                 <svg class="calculator__minus calculator__icons">
@@ -340,7 +338,7 @@
           Закажите уборку помещения и узнайте о вашей персональной скидкe
         </h3>
       </div>
-      <div class="col-4">
+      <div class="col-md-4 col-12 calc__xxl">
         <div class="calculator__total total">
           <h2 class="total__title">Стоимость услуг</h2>
           <div class="total__body">
@@ -399,6 +397,67 @@
               <button class="form__btn main-btn">Заказать уборку</button>
             </form>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="row calc__xl">
+      <div class="col-6">
+        <div class="calculator__total total">
+          <h2 class="total__title">Стоимость услуг</h2>
+          <div class="total__body">
+            <ul class="total__items">
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1 мест</span
+                ><span class="total__price">1000</span>
+              </li>
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1.5 мест</span
+                ><span class="total__price">1400</span>
+              </li>
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1.5 мест</span
+                ><span class="total__price">1400</span>
+              </li>
+              <li class="total__item">
+                <span class="total__name">Химчистка матраса 1.5 мест</span
+                ><span class="total__price">1400</span>
+              </li>
+            </ul>
+            <div class="total__total-price">
+              <span>Итого</span>
+              <span>5200</span>
+            </div>
+            <h3 class="form__title">Для заказа услуги, заполните форму ниже</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="calc__form">
+          <form action="#" class="total__form form">
+            <label class="form__label">
+              <input
+                type="text"
+                name="Имя"
+                class="input-reset form__input form__input"
+                placeholder="Имя"
+              />
+              <input
+                type="phone"
+                class="input-reset form__phone form__input"
+                placeholder="Телефон"
+              />
+              <input
+                type="email"
+                class="input-reset form__email form__input"
+                placeholder="Email"
+              />
+              <textarea
+                class="input-reset form__textarea form__input"
+                placeholder="Комментарий к заказу"
+              ></textarea>
+            </label>
+            <button class="form__btn main-btn">Заказать уборку</button>
+          </form>
         </div>
       </div>
     </div>

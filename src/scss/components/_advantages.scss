@@ -13,24 +13,45 @@
       top: -54%;
       right: -1%;
       transform: rotate(90deg);
+      @include wide-mobile {
+        top: -25%;
+      }
     }
     &--2 {
       bottom: -71%;
       left: 1%;
+      @include wide-mobile {
+        bottom: -35%;
+      }
     }
   }
   &__item {
     text-align: center;
+    @include big-mobile {
+      margin: 20px 0;
+    }
   }
   &__title {
     font-family: "InterSemiBold";
     font-size: 64px;
     color: var(--main-color);
     margin-bottom: 24px;
+    @include xl {
+      font-size: 56px;
+    }
+    @include tablet {
+      font-size: 48px;
+    }
   }
   &__text {
     font-family: "InterMedium";
     font-size: 22px;
     line-height: 27px;
+    @include xl {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
   }
 }
